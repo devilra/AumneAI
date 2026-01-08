@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* Global Styles */
+@layer base {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    /* Pure black or Very dark gray background for a premium look */
+    background-color: #000000;
+    color: #ffffff;
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+  }
+
+  /* Text selection color (optional - looks cool) */
+  ::selection {
+    background-color: #ff5f5f;
+    color: white;
+  }
+}
+
+/* Scrollbar styling (Optional - for dark mode feel) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
