@@ -29,11 +29,11 @@ const Navbar = () => {
       {/* ======================================================
           STEP 1: WIX PREVIEW TOP BAR (IMAGE MATCHED)
       ====================================================== */}
-      <div className="bg-white text-black h-14 px-6 flex items-center justify-between  border-b border-gray-200 text-sm">
-        {/* Left */}
-        <div className="flex items-center justify-center gap-6">
-          {/* WIX Logo */}
-          {/* <div className="flex items-center">
+      {/* <div className="bg-white text-black h-14 px-6 flex items-center justify-between  border-b border-gray-200 text-sm"> */}
+      {/* Left */}
+      {/* <div className="flex items-center justify-center gap-6"> */}
+      {/* WIX Logo */}
+      {/* <div className="flex items-center">
             <img src="/logo.png" alt="" className="h-14" />
             <h1
               className="text-xl font-bold
@@ -44,8 +44,8 @@ const Navbar = () => {
               AumneAI
             </h1>
           </div> */}
-        </div>
-        <div className="flex items-center gap-6">
+      {/* </div> */}
+      {/* <div className="flex items-center gap-6">
           <div className="flex items-center gap-3">
             <IoMdLaptop size={30} />
             <CiMobile4 size={30} />
@@ -60,9 +60,9 @@ const Navbar = () => {
         </div>
         <button className="bg-black text-white px-6 py-2 rounded-md font-medium hover:opacity-90 transition">
           Edit this site
-        </button>
-        {/* Center + Right */}
-      </div>
+        </button> */}
+      {/* Center + Right */}
+      {/* </div> */}
 
       {/* ======================================================
           STEP 2: MAIN VISTA.IO NAVBAR (UNCHANGED)
