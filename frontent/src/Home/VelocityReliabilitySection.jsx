@@ -34,7 +34,7 @@ export default function VelocityReliabilitySection() {
       className="relative min-h-screen bg-black  text-white overflow-hidden py-20"
     >
       <div className="">
-        <div className="mx-auto max-w-6xl px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="mx-auto max-w-[1550px] px-6 md:px-14 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* LEFT IMAGE BLOCK */}
           <div className="relative h-[650px] border border-white/10 overflow-hidden group">
             {/* Image with Zoom (scale) to allow more movement */}

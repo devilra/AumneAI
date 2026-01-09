@@ -68,7 +68,7 @@ export default function StatisticsSection() {
 
   return (
     <section ref={sectionRef} className=" text-white  px-6 overflow-hidden">
-      <div className="max-w-5xl mx-auto text-center">
+      <div className="max-w-[1550px] px-6 md:px-14 mx-auto text-center">
         <h2 className="text-3xl md:text-5xl font-light mb-24 tracking-tight">
           We Take Pride in Our Numbers
         </h2>
