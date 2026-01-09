@@ -63,7 +63,7 @@ export default function BannerSection() {
 
         <div
           ref={contentRef}
-          className="relative z-20 flex space-y-10 flex-col justify-start pt-10 h-full w-full lg:w-[1000px] px-6 md:px-20 text-white"
+          className="relative z-20 flex space-y-10 flex-col justify-start pt-20 h-full w-full lg:w-[1000px] px-6 md:px-10 text-white"
         >
           <h1 className="text-2xl md:text-4xl lg:text-7xl text-center lg:text-start font-semibold">
             The First Agentic Service Lifecycle Platform
@@ -84,7 +84,7 @@ export default function BannerSection() {
       </section>
 
       {/* SECTION 2: Idhu Banner-a cover pannitu mela varum (Video-la irukura maari) */}
-      <section className="relative z-30 min-h-screen bg-[#0A0A0A] flex items-center justify-center">
+      <section className="bg-[#0A0A0A] px-10 ">
         <DataGrowthSection />
       </section>
 
