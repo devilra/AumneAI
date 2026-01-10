@@ -56,14 +56,14 @@ export default function BannerSection() {
       >
         <div
           ref={bgRef}
-          className="absolute inset-0 w-full h-[120%] -top-[1%] bg-cover bg-center"
+          className="absolute inset-0 w-full h-[120%]  bg-cover bg-center"
           style={{ backgroundImage: "url('/para.avif')" }}
         />
         <div className="absolute inset-0 bg-black/50" />
 
         <div
           ref={contentRef}
-          className="relative z-20 flex space-y-10 flex-col justify-start pt-20 h-full w-full lg:w-[1000px] px-6 md:px-10 text-white"
+          className="relative z-20 flex space-y-10 flex-col justify-start pt-20 h-full w-full lg:w-[1000px] px-6 md:px-16 text-white"
         >
           <h1 className="text-2xl md:text-4xl lg:text-7xl text-center lg:text-start font-semibold">
             The First Agentic Service Lifecycle Platform
@@ -72,7 +72,9 @@ export default function BannerSection() {
             Aumne revolutionizes Service Lifecycle Management with Agentic
             systems, transforming legacy IVRs, chatbots, fragmented workflows,
             and siloed support into Agentic conversational services. Achieve{" "}
-            <span className="text-white">5x faster modernization.</span>
+            <span className="font-extrabold bg-linear-to-r from-[#036ffd] via-[#1e88e5] to-[#42a5f5] bg-clip-text text-transparent">
+              5x faster modernization.
+            </span>
           </p>
 
           <div className="text-center lg:text-start">

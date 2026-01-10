@@ -78,7 +78,7 @@ export default function DataGrowthSection() {
     >
       <div className="relative z-10 max-w-[1550px] mx-auto px-6">
         {/* Main Container with Border */}
-        <div className="border border-white/20 grid grid-cols-1 lg:grid-cols-12 min-h-[650px] relative bg-[#0a0a0a]">
+        <div className="border border-white/20 grid grid-cols-1 lg:grid-cols-12 min-h-[650px] relative ">
           {/* LEFT CONTENT BLOCK */}
           <div className="lg:col-span-5 relative overflow-hidden border-r border-white/10 p-12 lg:p-16 flex flex-col justify-center">
             <div
