@@ -6,8 +6,8 @@
   body {
     margin: 0;
     padding: 0;
-    background-color: #f1f1f1;
-    color: #1c1c1c;
+    background-color: #1c1c1c;
+    color: white;
     font-family: "Sora", system-ui, -apple-system, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

@@ -3,8 +3,8 @@ import { FaLinkedinIn, FaFacebookF, FaTwitter } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0A0A0A] text-white py-20 px-6 md:px-20 border-t border-white/5">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
+    <footer className="bg-[#0A0A0A] text-white/70 py-20 px-6 md:px-16 border-t border-white/5">
+      <div className="max-w-[1300px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
         {/* LOGO & ADDRESS BLOCK */}
         <div className="space-y-8">
           {/* <div className="flex items-center gap-2">
@@ -19,16 +19,16 @@ export default function Footer() {
             <img src="/logo.png" alt="Logo" className="h-20" />
           </div>
 
-          <div className="text-neutral-500 space-y-2 text-sm md:text-lg leading-relaxed">
+          <div className=" space-y-2 text-sm md:text-md leading-relaxed">
             <p>123-456-7890</p>
-            <p>Info@mysite.com</p>
-            <p>500 Terry Francine St</p>
-            <p>San Francisco, CA 94158</p>
+            <p>Info@aumneai.com</p>
+            <p>India</p>
+            <p>Bangalore</p>
           </div>
         </div>
 
         {/* NAVIGATION LINKS */}
-        <div className="flex flex-col md:text-lg text-neutral-500  gap-4">
+        <div className="flex flex-col md:text-md   gap-3">
           <a href="#" className=" hover:text-white transition-colors">
             Solutions
           </a>
@@ -42,22 +42,18 @@ export default function Footer() {
             Blog
           </a>
           <div className="mt-4">
-            <button className="bg-[#FF5A5A] hover:bg-[#ff4444] text-white px-8 py-3 rounded-md font-medium transition-all transform active:scale-95">
+            <button className="bg-linear-to-r from-[#036ffd] via-[#1e88e5] to-[#42a5f5] hover:to-[#5187b4] text-white px-8 py-3 rounded-md font-medium transition-all transform active:scale-95">
               Get Started
             </button>
           </div>
         </div>
 
         {/* NEWSLETTER FORM */}
-        <div className="md:col-span-1 space-y-6">
-          <h4 className="text-lg md:text-lg text-neutral-500">
-            Subscribe to Our Newsletter
-          </h4>
+        <div className="md:col-span-1 space-y-3">
+          <h4 className=" md:text-md ">Subscribe to Our Newsletter</h4>
           <div className="space-y-4">
             <div>
-              <label className="block text-sm mb-2 md:text-lg text-neutral-500">
-                Email *
-              </label>
+              <label className="block  mb-2 md:text-md ">Email *</label>
               <input
                 type="email"
                 className="w-full bg-transparent border border-neutral-800 p-3 focus:outline-none focus:border-[#5a5757] transition-colors"
@@ -80,25 +76,59 @@ export default function Footer() {
         {/* SOCIAL LINKS & COPYRIGHT */}
         <div className="flex flex-col items-start md:items-end justify-between space-y-12 md:space-y-0">
           <div className="space-y-4">
-            <p className="text-lg md:text-lg text-neutral-500">Follow Us On:</p>
+            <p className=" md:text-md ">Follow Us On:</p>
             <div className="flex gap-4">
               <a
                 href="#"
-                className="p-2 bg-neutral-300/30 rounded-full  hover:bg-[#FF5A5A] transition-all"
+                className="group relative p-2 rounded-full bg-neutral-300/30 overflow-hidden transition-all"
               >
-                <FaLinkedinIn className="text-neutral-300" size={18} />
+                {/* Gradient Hover Layer */}
+                <span
+                  className="absolute inset-0 bg-linear-to-r from-[#036ffd] via-[#1e88e5] to-[#42a5f5] 
+                   opacity-0 transition-opacity duration-300 ease-out 
+                   group-hover:opacity-100"
+                />
+
+                {/* Icon */}
+                <FaLinkedinIn
+                  className="relative z-10 text-neutral-300 group-hover:text-white transition-colors"
+                  size={18}
+                />
+              </a>
+
+              <a
+                href="#"
+                className="group relative p-2 rounded-full bg-neutral-300/30 overflow-hidden transition-all"
+              >
+                {/* Gradient Hover Layer */}
+                <span
+                  className="absolute inset-0 bg-linear-to-r from-[#036ffd] via-[#1e88e5] to-[#42a5f5] 
+                   opacity-0 transition-opacity duration-300 ease-out 
+                   group-hover:opacity-100"
+                />
+
+                {/* Icon */}
+                <FaFacebookF
+                  className="relative z-10 text-neutral-300 group-hover:text-white transition-colors"
+                  size={18}
+                />
               </a>
               <a
                 href="#"
-                className="p-2 bg-neutral-300/30 rounded-full hover:bg-[#FF5A5A] transition-all"
+                className="group relative p-2 rounded-full bg-neutral-300/30 overflow-hidden transition-all"
               >
-                <FaFacebookF className="text-neutral-300" size={18} />
-              </a>
-              <a
-                href="#"
-                className="p-2 bg-neutral-300/30 rounded-full hover:bg-[#FF5A5A] transition-all"
-              >
-                <FaTwitter className="text-neutral-300" size={18} />
+                {/* Gradient Hover Layer */}
+                <span
+                  className="absolute inset-0 bg-linear-to-r from-[#036ffd] via-[#1e88e5] to-[#42a5f5] 
+                   opacity-0 transition-opacity duration-300 ease-out 
+                   group-hover:opacity-100"
+                />
+
+                {/* Icon */}
+                <FaTwitter
+                  className="relative z-10 text-neutral-300 group-hover:text-white transition-colors"
+                  size={18}
+                />
               </a>
             </div>
           </div>
@@ -117,7 +147,7 @@ export default function Footer() {
 
       {/* FLOATING CHAT ICON (Bottom Right) */}
       <div className="fixed bottom-6 right-6 z-50">
-        <button className="bg-[#FF5A5A] p-4 rounded-xl shadow-lg hover:scale-110 transition-transform">
+        <button className="bg-linear-to-r from-[#036ffd] via-[#1e88e5] to-[#42a5f5]  p-4 rounded-xl shadow-lg hover:scale-110 transition-transform">
           <svg
             className="w-6 h-6 text-white"
             fill="currentColor"

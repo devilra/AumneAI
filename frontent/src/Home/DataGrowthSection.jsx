@@ -55,19 +55,19 @@ export default function DataGrowthSection() {
       title: "Omnichannel Experience",
       desc: "Ensure customers get consistent, connected journeys across every touchpoint.",
       icon: <PiGlobeSimpleLight />,
-      pos: "md:top-[351px] md:left-[-10px]",
+      pos: "md:top-[374px] md:left-[-10px]",
     },
     {
       title: "Human in the Loop",
       desc: "Experts stay in control. They review, refine, and release AI generated flows to ensure accuracy, compliance, governance, and trust.",
       icon: <FiUsers />,
-      pos: "md:top-[481px] md:left-[250px]",
+      pos: "md:top-[505px] md:left-[250px]",
     },
     {
       title: "Agentic Orchestration and Co-Pilot",
       desc: "Intelligent orchestration across ACT, with a co-pilot that empowers teams to guide and collaborate with AI seamlessly.",
       icon: <RiRobot2Line />,
-      pos: "md:top-[351px] md:left-[510px]",
+      pos: "md:top-[374px] md:left-[510px]",
     },
   ];
 
@@ -80,21 +80,21 @@ export default function DataGrowthSection() {
         {/* Main Container with Border */}
         <div className="border border-white/20 grid grid-cols-1 lg:grid-cols-12 min-h-[650px] relative ">
           {/* LEFT CONTENT BLOCK */}
-          <div className="lg:col-span-5 relative overflow-hidden border-r border-white/10 p-12 lg:p-16 flex flex-col justify-center">
+          <div className="lg:col-span-5 relative overflow-hidden border-r border-white/10 p-12 lg:p-13 flex flex-col justify-center">
             <div
               ref={bgRef}
               className="absolute inset-0 w-[140%] h-full opacity-30 bg-cover bg-center pointer-events-none z-0"
               style={{ backgroundImage: "url('/para2.avif')", left: "-20%" }}
             />
             <div className="relative z-10">
-              <h2 className="text-4xl font-semibold text-white">
-                Let Your Data Take <br />
-                Your Business to <br />
-                <span className="font-semibold text-indigo-400">
-                  Higher Grounds
+              <h2 className="text-xl md:text-3xl font-semibold text-white">
+                ACT bridges speed, <br />
+                and customer delight <br />
+                <span className="font-semibold bg-linear-to-r from-[#036ffd] via-[#1e88e5] to-[#42a5f5] bg-clip-text text-transparent">
+                  with enterprise-grade control.
                 </span>
               </h2>
-              <p className="mt-8 text-neutral-500 text-lg leading-relaxed max-w-xs">
+              <p className="mt-8 text-neutral-400 text-lg leading-relaxed max-w-xs">
                 Empower your enterprise with seamless AI integration and
                 data-driven decision making.
               </p>
@@ -111,22 +111,22 @@ export default function DataGrowthSection() {
                 <div
                   key={i}
                   className={`  border  
-                     lg:w-60 h-90 bg-[#121212] p-8  border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] 
+                     lg:w-60 h-96 bg-linear-to-br from-[#0a0a0a] via-[#101c2f] to-[#036ffd]/20 p-8  border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] 
                      md:w-64 flex flex-col justify-between transition-all duration-500 
                     relative md:absolute z-20 ${card.pos}`}
                 >
                   <div>
-                    <div className="text-4xl mb-6 text-indigo-400 opacity-90">
+                    <div className="text-4xl mb-6 text-[#42a5f5] opacity-90">
                       {card.icon}
                     </div>
-                    <h3 className="text-lg font-semibold text-indigo-100 mb-3 leading-tight">
+                    <h3 className="text-lg font-semibold bg-linear-to-r from-[#036ffd] via-[#1e88e5] to-[#42a5f5] bg-clip-text text-transparent mb-3 leading-tight">
                       {card.title}
                     </h3>
-                    <p className="text-neutral-500 text-sm leading-relaxed">
+                    <p className="text-white text-sm leading-relaxed">
                       {card.desc}
                     </p>
                   </div>
-                  <div className="mt-8 w-full h-1 bg-neutral-700 rounded-full" />
+                  <div className="mt-8 w-full h-1 bg-linear-to-r from-[#036ffd] via-[#1e88e5] to-[#42a5f5] op rounded-full" />
                 </div>
               ))}
             </div>

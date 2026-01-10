@@ -30,7 +30,7 @@ export default function BannerSection() {
         trigger: sectionRef.current,
         start: "top top",
         end: "bottom top",
-        scrub: true,
+        scrub: 1,
       },
     });
 
@@ -41,10 +41,15 @@ export default function BannerSection() {
       scrollTrigger: {
         trigger: sectionRef.current,
         start: "top top",
-        end: "50% top",
+        end: "30% top",
         scrub: true,
       },
     });
+
+    // Cleanup function: React-la GSAP use pannumpothu idhu romba mukkiyam
+    return () => {
+      ScrollTrigger.getAll().forEach((t) => t.kill());
+    };
   }, []);
 
   return (
@@ -63,22 +68,23 @@ export default function BannerSection() {
 
         <div
           ref={contentRef}
-          className="relative z-20 flex space-y-10 flex-col justify-start pt-20 h-full w-full lg:w-[1000px] px-6 md:px-16 text-white"
+          className="relative z-20 flex space-y-8 flex-col justify-start pt-20 h-full w-full lg:w-[1100px] px-6 md:px-16 text-white"
         >
-          <h1 className="text-2xl md:text-4xl lg:text-7xl text-center lg:text-start font-semibold">
-            The First Agentic Service Lifecycle Platform
+          <h1 className="text-2xl md:text-4xl  lg:text-7xl text-center lg:text-start font-semibold">
+            The First Agentic Service <br />
+            <span className="py-3 inline-block">Lifecycle Platform</span>
           </h1>
-          <p className="text-xl md:text-xl l text-center lg:text-start w-full tracking-tight lg:w-[600px] text-white/50 ">
+          <p className="text-xl md:text-xl l text-center  lg:text-start w-full  lg:w-[600px] text-white/50 ">
             Aumne revolutionizes Service Lifecycle Management with Agentic
             systems, transforming legacy IVRs, chatbots, fragmented workflows,
-            and siloed support into Agentic conversational services. Achieve{" "}
-            <span className="font-extrabold bg-linear-to-r from-[#036ffd] via-[#1e88e5] to-[#42a5f5] bg-clip-text text-transparent">
-              5x faster modernization.
+            and siloed support into Agentic conversational services.{" "}
+            <span className="font-extrabold  bg-linear-to-r from-[#036ffd] via-[#1e88e5] to-[#42a5f5] bg-clip-text text-transparent">
+              Achieve 5x faster modernization.
             </span>
           </p>
 
           <div className="text-center lg:text-start">
-            <button className=" w-fit rounded-lg bg-red-500 px-8 py-2">
+            <button className=" w-fit rounded-lg bg-linear-to-r from-[#036ffd] via-[#1e88e5] to-[#42a5f5] hover:to-[#5187b4] px-8 py-2">
               Lets's ACT
             </button>
           </div>

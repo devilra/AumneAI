@@ -11,12 +11,11 @@ export default function VelocityReliabilitySection() {
   const imageRef = useRef(null);
 
   useEffect(() => {
-    // Zoom aana image-ai nalla distance move panrom
     gsap.fromTo(
       imageRef.current,
-      { y: "15%" }, // Start position (bottom)
+      { y: "10%" },
       {
-        y: "-15%", // End position (top)
+        y: "-10%",
         ease: "none",
         scrollTrigger: {
           trigger: sectionRef.current,
@@ -31,60 +30,56 @@ export default function VelocityReliabilitySection() {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-screen bg-black  text-white overflow-hidden py-20"
+      className="relative min-h-screen bg-[#1c1c1c] text-white overflow-hidden py-20"
     >
-      <div className="">
-        <div className="mx-auto max-w-[1550px] px-6 md:px-14 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* LEFT IMAGE BLOCK */}
-          <div className="relative h-[650px] border border-white/10 overflow-hidden group">
-            {/* Image with Zoom (scale) to allow more movement */}
+      {/* Outer Container - No Border here */}
+      <div className="mx-auto max-w-[1550px] px-6 md:px-14">
+        {/* Inner Flex Container with Border - Ippo intha box-ku mattum thaan border varum */}
+        <div className="flex flex-col md:flex-row items-stretch border border-white/10">
+          {/* LEFT IMAGE BLOCK - Fixed width with w-1/2 or flex-1 */}
+          <div className="relative flex-1 min-h-[500px] md:h-[550px] overflow-hidden group border-r border-white/10">
             <div
               ref={imageRef}
-              className="absolute inset-0 bg-cover bg-center scale-150" // Zoomed in by 1.5x
+              className="absolute inset-0 bg-cover bg-center scale-125"
               style={{
-                backgroundImage: "url('/para3.avif')",
-                height: "120%", // Container-ai vida image height athigam
+                backgroundImage: "url('/image/human.jpg')",
+                height: "120%",
                 top: "-10%",
               }}
             />
 
-            {/* Dark overlay for text readability */}
-            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors duration-500" />
+            {/* Dark overlay */}
+            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500" />
 
             {/* Title inside image */}
-            <div className="relative z-10 h-full flex items-center justify-center px-8 lg:px-16">
-              <h2 className="text-xl md:text-3xl text-center font-semibold leading-tight tracking-tight">
-                Unprecedented Velocity. <br />
-                <span className="text-center">Impeccable Reliability.</span>
+            <div className="relative z-10 h-full flex items-center justify-center px-8 text-center">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight tracking-tight">
+                Human in the Loop <br />
+                <span className="">and Co-Pilot Integration.</span>
               </h2>
             </div>
           </div>
 
-          {/* RIGHT TEXT BLOCK */}
-          <div className="flex flex-col justify-center space-y-8 pr-4">
+          {/* RIGHT TEXT BLOCK - Fixed width with flex-1 */}
+          <div className="flex-1 flex flex-col justify-center p-8 md:p-16 space-y-8 bg-[#1c1c1c]">
             <div className="space-y-6">
-              <p className="text-neutral-500 text-lg leading-relaxed">
-                I'm a paragraph. Click here to add your own text and edit me.
-                It’s easy. Just click “Edit Text” or double click me to add your
-                own content and make changes to the font. Feel free to drag and
-                drop me anywhere you like on your page. I’m a great place for
-                you to tell a story and let your users know a little more about
-                you.
+              <p className="text-neutral-400 text-lg leading-relaxed">
+                Human in the loop and Co-Pilot are embedded throughout the
+                lifecycle, keeping experts in control while AI accelerates
+                delivery. This ensures accuracy, compliance, governance, and
+                trust at every step
               </p>
-
-              <p className="text-neutral-500 text-lg  leading-relaxed">
+              {/* 
+              <p className="text-neutral-400 text-lg leading-relaxed">
                 This is a great space to write a long text about your company
                 and your services. You can use this space to go into a little
                 more detail about your company. Talk about your team and what
-                services you provide. Tell your visitors the story of how you
-                came up with the idea for your business and what makes you
-                different from your competitors. Make your company stand out and
-                show your visitors who you are.
-              </p>
+                services you provide.
+              </p> */}
             </div>
 
             <div className="pt-4">
-              <button className="group relative inline-flex items-center gap-2 px-8 py-4 bg-red-600 text-white font-medium overflow-hidden transition-all hover:bg-red-700 active:scale-95">
+              <button className="group relative inline-flex items-center gap-2 px-8 rounded py-4 bg-linear-to-r from-[#036ffd] hover:to-[#5187b4] via-[#1e88e5] to-[#42a5f5] text-white font-medium transition-all hover:bg-red-700 active:scale-95">
                 <span>Learn More</span>
                 <svg
                   className="w-5 h-5 transition-transform group-hover:translate-x-1"

@@ -9,7 +9,7 @@ const Navbar = () => {
   // Active link style function
   const activeStyle = ({ isActive }) =>
     isActive
-      ? "text-[#FF5F5F] font-bold transition"
+      ? "text-indigo-300 font-bold transition"
       : "hover:text-gray-400 transition";
 
   const { scrollY } = useScroll();
@@ -25,7 +25,7 @@ const Navbar = () => {
   });
 
   return (
-    <header className="top-0 z-50 w-full bg-[#0a0a0a]">
+    <header className="sticky top-0 z-50 w-full ">
       {/* ======================================================
           STEP 1: WIX PREVIEW TOP BAR (IMAGE MATCHED)
       ====================================================== */}
@@ -74,7 +74,7 @@ const Navbar = () => {
         }}
         animate={hidden ? "hidden" : "visible"}
         transition={{ duration: 0.4, ease: [0.23, 1, 0.32, 1] }} // Custom cubic-bezier for extra smoothness        //className="sticky top-0 z-50 w-full"
-        className="fixed top-0 left-0 z-50 w-full bg-[#0a0a0a] text-white px-6 md:px-16 py-5 flex items-center justify-between shadow-2xl"
+        className="bg-[#0a0a0a] text-white px-16 py-5 flex items-center justify-between font-sans shadow-xl"
       >
         {/* Logo */}
         <NavLink to="/" className="flex items-center gap-3">
@@ -118,7 +118,7 @@ const Navbar = () => {
 
           {/* CTA */}
           <NavLink to="/get-started">
-            <button className="border border-white/50 px-6 py-2 rounded-md hover:bg-white hover:text-black transition duration-300">
+            <button className=" bg-linear-to-r from-[#036ffd] via-[#1e88e5] to-[#42a5f5] px-6 py-2 rounded-md hover:bg-white  hover:to-[#5187b4]   transition duration-300">
               Get Started
             </button>
           </NavLink>
