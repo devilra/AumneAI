@@ -37,12 +37,12 @@ export default function VelocityReliabilitySection() {
         {/* Inner Flex Container with Border - Ippo intha box-ku mattum thaan border varum */}
         <div className="flex flex-col md:flex-row items-stretch border border-white/10">
           {/* LEFT IMAGE BLOCK - Fixed width with w-1/2 or flex-1 */}
-          <div className="relative flex-1 min-h-[500px] md:h-[550px] overflow-hidden group border-r border-white/10">
+          <div className="relative flex-1 min-h-[500px] md:h-[650px] overflow-hidden group border-r border-white/10">
             <div
               ref={imageRef}
               className="absolute inset-0 bg-cover bg-center scale-125"
               style={{
-                backgroundImage: "url('/image/human.jpg')",
+                backgroundImage: "url('/image/core.jpg')",
                 height: "120%",
                 top: "-10%",
               }}
@@ -52,49 +52,56 @@ export default function VelocityReliabilitySection() {
             <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500" />
 
             {/* Title inside image */}
-            <div className="relative z-10 h-full flex items-center justify-center px-8 text-center">
+            {/* <div className="relative z-10 h-full flex items-center justify-center px-8 text-center">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight tracking-tight">
                 Human in the Loop <br />
                 <span className="">and Co-Pilot Integration.</span>
               </h2>
-            </div>
+            </div> */}
           </div>
 
           {/* RIGHT TEXT BLOCK - Fixed width with flex-1 */}
-          <div className="flex-1 flex flex-col justify-center p-8 md:p-16 space-y-8 bg-[#1c1c1c]">
-            <div className="space-y-6">
-              <p className="text-neutral-400 text-lg leading-relaxed">
-                Human in the loop and Co-Pilot are embedded throughout the
-                lifecycle, keeping experts in control while AI accelerates
-                delivery. This ensures accuracy, compliance, governance, and
-                trust at every step
+          <div className="flex-1 flex flex-col justify-center p-8 md:p-12 space-y-8 ">
+            {/* Title */}
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+              The Core Problem
+            </h2>
+
+            {/* Card 1: Service Lifecycle */}
+            <div className="group p-8 rounded-2xl border border-[#1e3a8a] bg-[#112240]/40 backdrop-blur-sm transition-all hover:border-[#3b82f6]/50">
+              <h3 className="text-[#3b82f6] text-lg font-bold mb-4 leading-tight">
+                No Proactive, End to End Service Lifecycle Management
+              </h3>
+              <p className="text-gray-300 text-md leading-relaxed">
+                Service today runs on{" "}
+                <span className="text-white font-bold">
+                  outdated IVRs, disconnected chatbots, siloed workflows.
+                </span>{" "}
+                Unlike products,{" "}
+                <span className="text-white font-bold">
+                  services don't evolve continuously
+                </span>
+                , leaving enterprises with{" "}
+                <span className="text-white font-bold">
+                  slow, manual, and costly
+                </span>{" "}
+                transformations and no visibility or learning from usage.
               </p>
-              {/* 
-              <p className="text-neutral-400 text-lg leading-relaxed">
-                This is a great space to write a long text about your company
-                and your services. You can use this space to go into a little
-                more detail about your company. Talk about your team and what
-                services you provide.
-              </p> */}
             </div>
 
-            <div className="pt-4">
-              <button className="group relative inline-flex items-center gap-2 px-8 rounded py-4 bg-linear-to-r from-[#036ffd] hover:to-[#5187b4] via-[#1e88e5] to-[#42a5f5] text-white font-medium transition-all hover:bg-red-700 active:scale-95">
-                <span>Learn More</span>
-                <svg
-                  className="w-5 h-5 transition-transform group-hover:translate-x-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </button>
+            {/* Card 2: Customer Impact */}
+            <div className="group p-8 rounded-2xl border border-[#1e3a8a] bg-[#112240]/40 backdrop-blur-sm transition-all hover:border-[#ef4444]/30">
+              <h3 className="text-[#e11d48] text-lg font-bold mb-4">
+                Customer Impact
+              </h3>
+              <p className="text-gray-300 text-md leading-relaxed">
+                Customers feel the impact too with{" "}
+                <span className="text-white font-bold">
+                  broken journeys, repeated frustrations
+                </span>
+                , and <span className="text-white font-bold">poor</span>{" "}
+                omnichannel experiences that erode trust and loyalty.
+              </p>
             </div>
           </div>
         </div>
