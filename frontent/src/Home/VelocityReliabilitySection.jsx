@@ -82,15 +82,15 @@ export default function VelocityReliabilitySection() {
       className="relative min-h-screen bg-[#1c1c1c] text-white overflow-hidden py-20"
     >
       <div className="mx-auto max-w-[1550px] px-6 md:px-14">
-        <div className="flex flex-col md:flex-row items-center  border-white/10 rounded-xl overflow-hidden">
+        <div className="flex flex-col md:flex-row items-center gap-10 border border-white/10 rounded-xl overflow-hidden">
           {/* LEFT IMAGE BLOCK */}
-          <div className="relative flex-1 min-h-[500px] md:h-[350px] overflow-hidden group border-r border-white/10">
+          <div className="relative flex-1 min-h-[565px]  overflow-hidden group border-r border-white/10">
             <div
               ref={imageRef}
               className="absolute inset-0 bg-cover bg-center scale-125"
               style={{
                 backgroundImage: "url('/image/core.jpg')",
-                height: "120%",
+                height: "100%",
                 top: "-10%",
               }}
             />
@@ -98,7 +98,7 @@ export default function VelocityReliabilitySection() {
           </div>
 
           {/* RIGHT TEXT BLOCK */}
-          <div className="flex-1 flex flex-col justify-center p-8 md:p-12 space-y-8 ">
+          <div className="flex-1 flex flex-col py-10 px-5 justify-center  space-y-8 ">
             <h2 className="text-xl md:text-3xl font-bold text-white mb-4">
               The Core Problem
             </h2>
@@ -144,7 +144,7 @@ export default function VelocityReliabilitySection() {
               onMouseLeave={() => handleMouseLeave(1)}
               style={{ transformStyle: "preserve-3d" }}
               // className="group p-8 rounded-2xl border border-[#1e3a8a] bg-[#112240]/40 backdrop-blur-sm transition-all hover:border-[#ef4444]/30 "
-              className="group py-3 rounded-2xl   backdrop-blur-sm transition-all "
+              className="group  rounded-2xl   backdrop-blur-sm transition-all "
             >
               <h3 className="text-[#e11d48] text-md md:text-xl font-bold mb-4">
                 Customer Impact
