@@ -36,7 +36,7 @@ export default function VelocityReliabilitySection() {
     const card = cardsRef.current[index];
     gsap.to(card, {
       scale: 1.02,
-      backgroundColor: "rgba(17, 34, 64, 0.6)", // Slightly brighter on hover
+      //backgroundColor: "rgba(17, 34, 64, 0.6)", // Slightly brighter on hover
       duration: 0.4,
       ease: "power2.out",
     });
@@ -70,7 +70,7 @@ export default function VelocityReliabilitySection() {
       scale: 1,
       rotateX: 0,
       rotateY: 0,
-      backgroundColor: "rgba(17, 34, 64, 0.4)", // Original color
+      //backgroundColor: "rgba(17, 34, 64, 0.4)", // Original color
       duration: 0.6,
       ease: "elastic.out(1, 0.5)",
     });
@@ -82,9 +82,9 @@ export default function VelocityReliabilitySection() {
       className="relative min-h-screen bg-[#1c1c1c] text-white overflow-hidden py-20"
     >
       <div className="mx-auto max-w-[1550px] px-6 md:px-14">
-        <div className="flex flex-col md:flex-row items-stretch border border-white/10 rounded-xl overflow-hidden">
+        <div className="flex flex-col md:flex-row items-center  border-white/10 rounded-xl overflow-hidden">
           {/* LEFT IMAGE BLOCK */}
-          <div className="relative flex-1 min-h-[500px] md:h-[750px] overflow-hidden group border-r border-white/10">
+          <div className="relative flex-1 min-h-[500px] md:h-[350px] overflow-hidden group border-r border-white/10">
             <div
               ref={imageRef}
               className="absolute inset-0 bg-cover bg-center scale-125"
@@ -98,10 +98,11 @@ export default function VelocityReliabilitySection() {
           </div>
 
           {/* RIGHT TEXT BLOCK */}
-          <div className="flex-1 flex flex-col justify-center p-8 md:p-12 space-y-8 bg-[#0a0a0a]">
+          <div className="flex-1 flex flex-col justify-center p-8 md:p-12 space-y-8 ">
             <h2 className="text-xl md:text-3xl font-bold text-white mb-4">
               The Core Problem
             </h2>
+            <div className="h-0.5 w-[53%] bg-linear-to-r from-[#036ffd] to-[#42a5f5] rounded-full" />
 
             {/* Card 1 */}
             <div
@@ -110,7 +111,8 @@ export default function VelocityReliabilitySection() {
               onMouseMove={(e) => handleMouseMove(e, 0)}
               onMouseLeave={() => handleMouseLeave(0)}
               style={{ transformStyle: "preserve-3d" }}
-              className="group p-8 rounded-2xl border border-[#1e3a8a] bg-[#112240]/40 backdrop-blur-sm transition-all hover:border-[#3b82f6]/50 "
+              // className="group p-8 rounded-2xl border border-[#1e3a8a] bg-[#112240]/40 backdrop-blur-sm transition-all hover:border-[#3b82f6]/50 "
+              className="group py-3 rounded-2xl  backdrop-blur-sm transition-all  "
             >
               <h3 className="text-[#3b82f6] text-md md:text-xl font-bold mb-4 leading-tight">
                 No Proactive, End to End Service Lifecycle Management
@@ -132,6 +134,8 @@ export default function VelocityReliabilitySection() {
               </p>
             </div>
 
+            <div className="h-0.5 w-full bg-linear-to-r from-[#036ffd] to-[#42a5f5] rounded-full" />
+
             {/* Card 2 */}
             <div
               ref={(el) => (cardsRef.current[1] = el)}
@@ -139,7 +143,8 @@ export default function VelocityReliabilitySection() {
               onMouseMove={(e) => handleMouseMove(e, 1)}
               onMouseLeave={() => handleMouseLeave(1)}
               style={{ transformStyle: "preserve-3d" }}
-              className="group p-8 rounded-2xl border border-[#1e3a8a] bg-[#112240]/40 backdrop-blur-sm transition-all hover:border-[#ef4444]/30 "
+              // className="group p-8 rounded-2xl border border-[#1e3a8a] bg-[#112240]/40 backdrop-blur-sm transition-all hover:border-[#ef4444]/30 "
+              className="group py-3 rounded-2xl   backdrop-blur-sm transition-all "
             >
               <h3 className="text-[#e11d48] text-md md:text-xl font-bold mb-4">
                 Customer Impact
