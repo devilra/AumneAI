@@ -27,7 +27,7 @@ export default function DataGrowthSection() {
           end: "bottom top",
           scrub: true,
         },
-      }
+      },
     );
   }, []);
 
@@ -90,7 +90,10 @@ export default function DataGrowthSection() {
               <h2 className="text-xl md:text-3xl font-semibold text-white">
                 ACT bridges speed, <br />
                 and customer delight <br />
-                <span className="font-semibold bg-linear-to-r from-[#036ffd] via-[#1e88e5] to-[#42a5f5] bg-clip-text text-transparent">
+                <span
+                  //  className="font-semibold bg-linear-to-r from-[#036ffd] via-[#1e88e5] to-[#42a5f5] bg-clip-text text-transparent"
+                  className="font-semibold bg-linear-to-r text-[#42a5f5]"
+                >
                   with enterprise-grade control.
                 </span>
               </h2>
@@ -119,7 +122,7 @@ export default function DataGrowthSection() {
                     <div className="text-4xl mb-6 text-[#42a5f5] opacity-90">
                       {card.icon}
                     </div>
-                    <h3 className="text-lg font-semibold bg-linear-to-r from-[#036ffd] via-[#1e88e5] to-[#42a5f5] bg-clip-text text-transparent mb-3 leading-tight">
+                    <h3 className="text-lg font-semibold text-[#42a5f5] mb-3 leading-tight">
                       {card.title}
                     </h3>
                     <p className="text-white text-sm leading-relaxed">

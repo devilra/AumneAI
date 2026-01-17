@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { IoMdLaptop } from "react-icons/io";
 import { CiMobile4 } from "react-icons/ci";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+import { IoMdContact } from "react-icons/io";
 
 const Navbar = () => {
   const [hidden, setHidden] = useState(false);
@@ -108,17 +109,19 @@ const Navbar = () => {
 
           {/* Login */}
           <NavLink to="/login" className="flex items-center gap-2 group">
-            <div className="w-6 h-6 bg-linear-to-r from-[#036ffd] via-[#1e88e5] to-[#42a5f5] rounded-full flex items-center justify-center group-hover:scale-110 transition">
-              <span className="text-[12px]">👤</span>
+            <div className="w-8 h-8 bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1] rounded-full flex items-center justify-center group-hover:scale-110 transition">
+              <span className="text-[12px]">
+                <IoMdContact size={20} />
+              </span>
             </div>
-            <span className="bg-linear-to-r from-[#036ffd] via-[#1e88e5] to-[#42a5f5] bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1] bg-clip-text text-transparent">
               Log In
             </span>
           </NavLink>
 
           {/* CTA */}
           <NavLink to="/get-started">
-            <button className=" bg-linear-to-r from-[#036ffd] via-[#1e88e5] to-[#42a5f5] px-6 py-2 rounded-md hover:bg-white  hover:to-[#5187b4]   transition duration-300">
+            <button className=" bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1] px-6 py-2 rounded-md hover:bg-white  hover:to-[#5187b4]   transition duration-300">
               Get Started
             </button>
           </NavLink>

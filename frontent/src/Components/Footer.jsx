@@ -42,7 +42,7 @@ export default function Footer() {
             Blog
           </a>
           <div className="mt-4">
-            <button className="bg-linear-to-r from-[#036ffd] via-[#1e88e5] to-[#42a5f5] hover:to-[#5187b4] text-white px-8 py-3 rounded-md font-medium transition-all transform active:scale-95">
+            <button className="bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1] hover:to-[#5187b4] text-white px-8 py-3 rounded-md font-medium transition-all transform active:scale-95">
               Get Started
             </button>
           </div>
@@ -147,7 +147,7 @@ export default function Footer() {
 
       {/* FLOATING CHAT ICON (Bottom Right) */}
       <div className="fixed bottom-6 right-6 z-50">
-        <button className="bg-linear-to-r from-[#036ffd] via-[#1e88e5] to-[#42a5f5]  p-4 rounded-xl shadow-lg hover:scale-110 transition-transform">
+        <button className="bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1]  p-4 rounded-xl shadow-lg hover:scale-110 transition-transform">
           <svg
             className="w-6 h-6 text-white"
             fill="currentColor"

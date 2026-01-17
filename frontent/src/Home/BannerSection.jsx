@@ -78,13 +78,13 @@ export default function BannerSection() {
             Aumne revolutionizes Service Lifecycle Management with Agentic
             systems, transforming legacy IVRs, chatbots, fragmented workflows,
             and siloed support into Agentic conversational services.{" "}
-            <span className="font-extrabold  bg-linear-to-r from-[#036ffd] via-[#1e88e5] to-[#42a5f5] bg-clip-text text-transparent">
+            <span className="font-extrabold  text-[#42a5f5] ">
               Achieve 5x faster modernization.
             </span>
           </p>
 
           <div className="text-center lg:text-start">
-            <button className=" w-fit rounded-lg bg-linear-to-r from-[#036ffd] via-[#1e88e5] to-[#42a5f5] hover:to-[#5187b4] px-8 py-2">
+            <button className=" w-fit rounded-lg bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1] hover:to-[#5187b4] px-8 py-2">
               Lets's ACT
             </button>
           </div>

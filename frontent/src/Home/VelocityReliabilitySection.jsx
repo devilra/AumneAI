@@ -27,7 +27,7 @@ export default function VelocityReliabilitySection() {
           end: "bottom top",
           scrub: true,
         },
-      }
+      },
     );
   }, []);
 
@@ -114,7 +114,7 @@ export default function VelocityReliabilitySection() {
               // className="group p-8 rounded-2xl border border-[#1e3a8a] bg-[#112240]/40 backdrop-blur-sm transition-all hover:border-[#3b82f6]/50 "
               className="group py-3 rounded-2xl  backdrop-blur-sm transition-all  "
             >
-              <h3 className="text-[#3b82f6] text-md md:text-xl font-bold mb-4 leading-tight">
+              <h3 className="text-[#42a5f5] text-md md:text-xl font-bold mb-4 leading-tight">
                 No Proactive, End to End Service Lifecycle Management
               </h3>
               <p className="text-gray-300 text-md leading-relaxed">

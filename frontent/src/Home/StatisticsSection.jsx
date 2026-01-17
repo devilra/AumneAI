@@ -28,7 +28,7 @@ export default function StatisticsSection() {
           trigger: sectionRef.current,
           start: "top 75%",
         },
-      }
+      },
     );
 
     // 2. NUMBERS COUNT-UP
@@ -54,7 +54,7 @@ export default function StatisticsSection() {
             const value = this.targets()[0].innerHTML;
             stat.innerHTML = prefix + Math.floor(value) + suffix;
           },
-        }
+        },
       );
     });
   }, []);
@@ -180,7 +180,7 @@ export default function StatisticsSection() {
       className="py-24 text-white px-6 bg-[#1c1c1c] overflow-hidden"
     >
       <div className="max-w-[1550px] mx-auto text-center">
-        <h2 className="text-4xl md:text-6xl bg-linear-to-r from-[#036ffd] to-[#42a5f5] bg-clip-text text-transparent font-semibold mb-6 tracking-tight">
+        <h2 className="text-4xl md:text-6xl text-[#42a5f5] font-semibold mb-6 tracking-tight">
           Industry Trends
         </h2>
         <p className="mb-20 text-neutral-400 text-lg md:text-xl max-w-4xl mx-auto leading-relaxed">
@@ -211,7 +211,7 @@ export default function StatisticsSection() {
               </div>
 
               {/* Number */}
-              <div className="text-5xl md:text-6xl font-bold bg-linear-to-r from-[#036ffd] to-[#42a5f5] bg-clip-text text-transparent mb-4">
+              <div className="text-5xl md:text-6xl font-bold text-[#42a5f5] mb-4">
                 <span
                   ref={(el) => (statsRef.current[index] = el)}
                   data-target={item.value}
@@ -225,7 +225,7 @@ export default function StatisticsSection() {
               <p className="text-neutral-400 text-lg mb-6 leading-relaxed">
                 {item.label}
               </p>
-              <p className="text-blue-500/80 text-sm font-medium tracking-wide uppercase">
+              <p className="text-[#42a5f5] text-sm font-medium tracking-wide uppercase">
                 {item.source}
               </p>
             </div>
