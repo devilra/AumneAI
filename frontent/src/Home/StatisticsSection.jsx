@@ -180,7 +180,7 @@ export default function StatisticsSection() {
       className="py-24 text-white px-6 bg-[#1c1c1c] overflow-hidden"
     >
       <div className="max-w-[1550px] mx-auto text-center">
-        <h2 className="text-4xl md:text-6xl text-[#42a5f5] font-semibold mb-6 tracking-tight">
+        <h2 className="text-4xl md:text-6xl text-[#0D7EB6] font-semibold mb-6 tracking-tight">
           Industry Trends
         </h2>
         <p className="mb-20 text-neutral-400 text-lg md:text-xl max-w-4xl mx-auto leading-relaxed">
@@ -206,12 +206,12 @@ export default function StatisticsSection() {
               <div className="absolute -inset-1 bg-linear-to-r from-blue-600 to-cyan-500 opacity-0 group-hover:opacity-10 blur-xl transition-opacity duration-500" />
 
               {/* Icon Section */}
-              <div className="icon-box text-2xl text-blue-500 mb-6 bg-blue-500/10 p-4 rounded-full transition-colors duration-300">
+              <div className="icon-box text-2xl text-[#0D7EB6] mb-6 bg-blue-500/10 p-4 rounded-full transition-colors duration-300">
                 {item.icon}
               </div>
 
               {/* Number */}
-              <div className="text-5xl md:text-6xl font-bold text-[#42a5f5] mb-4">
+              <div className="text-5xl md:text-6xl font-bold text-[#0D7EB6] mb-4">
                 <span
                   ref={(el) => (statsRef.current[index] = el)}
                   data-target={item.value}
@@ -225,7 +225,7 @@ export default function StatisticsSection() {
               <p className="text-neutral-400 text-lg mb-6 leading-relaxed">
                 {item.label}
               </p>
-              <p className="text-[#42a5f5] text-sm font-medium tracking-wide uppercase">
+              <p className="text-[#0D7EB6] text-sm font-medium tracking-wide uppercase">
                 {item.source}
               </p>
             </div>

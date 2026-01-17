@@ -92,7 +92,7 @@ export default function DataGrowthSection() {
                 and customer delight <br />
                 <span
                   //  className="font-semibold bg-linear-to-r from-[#036ffd] via-[#1e88e5] to-[#42a5f5] bg-clip-text text-transparent"
-                  className="font-semibold bg-linear-to-r text-[#42a5f5]"
+                  className="font-semibold bg-linear-to-r text-[#0D7EB6]"
                 >
                   with enterprise-grade control.
                 </span>
@@ -122,7 +122,7 @@ export default function DataGrowthSection() {
                     <div className="text-4xl mb-6 text-[#42a5f5] opacity-90">
                       {card.icon}
                     </div>
-                    <h3 className="text-lg font-semibold text-[#42a5f5] mb-3 leading-tight">
+                    <h3 className="text-lg font-semibold text-[#0D7EB6] mb-3 leading-tight">
                       {card.title}
                     </h3>
                     <p className="text-white text-sm leading-relaxed">

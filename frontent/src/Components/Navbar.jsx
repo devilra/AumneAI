@@ -114,9 +114,7 @@ const Navbar = () => {
                 <IoMdContact size={20} />
               </span>
             </div>
-            <span className="bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1] bg-clip-text text-transparent">
-              Log In
-            </span>
+            <span className="text-[#0D7EB6]">Log In</span>
           </NavLink>
 
           {/* CTA */}

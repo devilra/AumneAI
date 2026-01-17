@@ -78,7 +78,7 @@ export default function BannerSection() {
             Aumne revolutionizes Service Lifecycle Management with Agentic
             systems, transforming legacy IVRs, chatbots, fragmented workflows,
             and siloed support into Agentic conversational services.{" "}
-            <span className="font-extrabold  text-[#42a5f5] ">
+            <span className="font-extrabold  text-[#0D7EB6] ">
               Achieve 5x faster modernization.
             </span>
           </p>
