@@ -119,17 +119,17 @@ export default function DataGrowthSection() {
                     relative md:absolute z-20 ${card.pos}`}
                 >
                   <div>
-                    <div className="text-4xl mb-6 text-[#42a5f5] opacity-90">
+                    <div className="text-4xl mb-6 text-white opacity-90">
                       {card.icon}
                     </div>
-                    <h3 className="text-lg font-semibold text-[#0D7EB6] mb-3 leading-tight">
+                    <h3 className="text-lg font-semibold text-white mb-3 leading-tight">
                       {card.title}
                     </h3>
-                    <p className="text-white text-sm leading-relaxed">
+                    <p className="text-neutral-400 text-sm leading-relaxed">
                       {card.desc}
                     </p>
                   </div>
-                  <div className="mt-8 w-full h-1 bg-linear-to-r from-[#036ffd] via-[#1e88e5] to-[#42a5f5] op rounded-full" />
+                  <div className="mt-8 w-full h-1 bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1] op rounded-full" />
                 </div>
               ))}
             </div>

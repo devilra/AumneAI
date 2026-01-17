@@ -177,7 +177,7 @@ export default function StatisticsSection() {
   return (
     <section
       ref={sectionRef}
-      className="py-24 text-white px-6 bg-[#1c1c1c] overflow-hidden"
+      className="pt-24 text-white px-6 bg-[#1c1c1c] overflow-hidden"
     >
       <div className="max-w-[1550px] mx-auto text-center">
         <h2 className="text-4xl md:text-6xl text-[#0D7EB6] font-semibold mb-6 tracking-tight">

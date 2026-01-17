@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import DataGrowthSection from "./DataGrowthSection";
 import VelocityReliabilitySection from "./VelocityReliabilitySection";
 import StatisticsSection from "./StatisticsSection";
-import HorizontalScrollImage from "./HorizontalScrollImage";
+import HorizontalScrollVideo from "./HorizontalScrollImage";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -101,9 +101,9 @@ export default function BannerSection() {
       </section>
       <section className="">
         <StatisticsSection />
-      </section>
-      <section className="">
-        <HorizontalScrollImage />
+        <section className="">
+          <HorizontalScrollVideo />
+        </section>
       </section>
     </main>
   );
