@@ -122,7 +122,7 @@ export default function DataGrowthSection() {
                     <div className="text-4xl mb-6 text-white opacity-90">
                       {card.icon}
                     </div>
-                    <h3 className="text-lg font-semibold text-white mb-3 leading-tight">
+                    <h3 className="text-lg font-semibold text-[#0D7EB6] mb-3 leading-tight">
                       {card.title}
                     </h3>
                     <p className="text-neutral-400 text-sm leading-relaxed">
