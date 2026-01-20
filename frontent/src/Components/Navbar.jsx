@@ -10,7 +10,7 @@ const Navbar = () => {
   // Active link style function
   const activeStyle = ({ isActive }) =>
     isActive
-      ? "text-indigo-300 font-bold transition"
+      ? "text-[#0D7EB6] font-bold transition"
       : "hover:text-gray-400 transition";
 
   const { scrollY } = useScroll();
@@ -94,6 +94,9 @@ const Navbar = () => {
 
         {/* Links */}
         <div className="hidden md:flex items-center gap-10 text-[15px] font-normal">
+          <NavLink to="/" className={activeStyle}>
+            Home
+          </NavLink>
           <NavLink to="/solutions" className={activeStyle}>
             Solutions
           </NavLink>
