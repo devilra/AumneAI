@@ -103,11 +103,15 @@ const Navbar = () => {
           <NavLink to="/benefits" className={activeStyle}>
             Benefits
           </NavLink>
-          <NavLink to="/programs" className={activeStyle}>
-            Programs
+          <NavLink to="/industry-trends" className={activeStyle}>
+            Industry Trends
           </NavLink>
-          <NavLink to="/blog" className={activeStyle}>
-            Blog
+          <NavLink to="/roi-calculator" className={activeStyle}>
+            ROI Calculator
+          </NavLink>
+
+          <NavLink to="/gst-partnership" className={activeStyle}>
+            GSI Partnership
           </NavLink>
 
           {/* Login */}
