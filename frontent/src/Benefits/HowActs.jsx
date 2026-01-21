@@ -39,13 +39,13 @@ export default function HowActs() {
       title: "Discovery",
       desc: "Ingests enterprise artifacts including legacy IVRs, workflows, transcripts, product documents, API guides, knowledge bases, etc. to capture intents, personas, and objectives.",
       icon: <LuSearch />,
-      pos: "md:top-[-30px] md:left-[-10px]",
+      pos: "md:top-[-30px] md:left-[-40px]",
     },
     {
       title: "Visibility",
       desc: "Provides a single view into existing flows, performance, and gaps, creating a clear foundation for modernization.",
       icon: <LuEye />,
-      pos: "md:top-[100px] md:left-[250px]",
+      pos: "md:top-[100px] md:left-[235px]",
     },
     {
       title: "Design",
@@ -57,19 +57,19 @@ export default function HowActs() {
       title: "Develop",
       desc: "Flows are validated, refined, and integrated with human in the loop oversight, compliance checks, and system integrations.",
       icon: <LuCode />,
-      pos: "md:top-[374px] md:left-[-10px]",
+      pos: "md:top-[410px] md:left-[-40px]",
     },
     {
       title: "Deploy",
       desc: "Publish across voice, chat, and digital platforms with enterprise grade governance and multi platform agility.",
       icon: <LuRocket />,
-      pos: "md:top-[505px] md:left-[250px]",
+      pos: "md:top-[540px] md:left-[235px]",
     },
     {
       title: "Continuous Evolution",
       desc: "A built in feedback loop captures insights from every interaction. ACT uses this learning to continuously evolve services in sync with product changes.",
       icon: <LuRefreshCw />,
-      pos: "md:top-[374px] md:left-[510px]",
+      pos: "md:top-[410px] md:left-[510px]",
     },
   ];
 
@@ -78,7 +78,7 @@ export default function HowActs() {
       ref={sectionRef}
       className="relative min-h-screen text-white py-40 mb-20 overflow-visible"
     >
-      <div className="relative z-10 max-w-[1550px] mx-auto px-6">
+      <div className="relative z-10 max-w-[1550px] mx-auto px-6 md:px-16">
         {/* Main Container with Border */}
         <div className="border border-white/20 grid grid-cols-1 lg:grid-cols-12 min-h-[650px] relative ">
           {/* LEFT CONTENT BLOCK */}
@@ -89,10 +89,10 @@ export default function HowActs() {
               style={{ backgroundImage: "url('/para2.avif')", left: "-20%" }}
             />
             <div className="relative z-10">
-              <h2 className="text-xl md:text-6xl text-center tracking-[6px] font-bold text-white/70">
-                <span className="inline-block py-3">The</span> <br />
-                <span className="inline-block py-3">Act</span> <br />
-                <span className="inline-block py-3"> Lifecycle</span>{" "}
+              <h2 className="text-xl md:text-3xl text-center tracking-[3px] font-bold text-white/70">
+                <span className="inline-block py-2">The</span> <br />
+                <span className="inline-block py-2">Act</span> <br />
+                <span className="inline-block py-2"> Lifecycle</span>{" "}
                 {/* <span
                   //  className="font-semibold bg-linear-to-r from-[#036ffd] via-[#1e88e5] to-[#42a5f5] bg-clip-text text-transparent"
                   className="font-semibold bg-linear-to-r text-[#0D7EB6]"
@@ -140,12 +140,12 @@ export default function HowActs() {
 
                   <div className="relative z-10">
                     {/* Icon with Floating effect */}
-                    <div className="text-5xl mb-8 text-[#0D7EB6] transform transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1">
+                    <div className="text-4xl mb-6 text-[#0D7EB6] transform transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1">
                       {card.icon}
                     </div>
 
                     {/* Title with Gradient */}
-                    <h3 className="text-xl font-bold bg-clip-text text-transparent bg-linear-to-r from-white to-white/70 mb-4 leading-tight">
+                    <h3 className="text-lg font-bold bg-clip-text text-transparent bg-linear-to-r from-white to-white/70 mb-4 leading-tight">
                       {card.title}
                     </h3>
 
