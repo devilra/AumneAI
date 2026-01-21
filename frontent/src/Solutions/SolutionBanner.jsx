@@ -83,8 +83,8 @@ export default function SolutionBanner() {
           </h1>
           <p className="text-xl md:text-xl text-center lg:text-start w-full lg:w-[600px] text-white/50 ">
             Most platforms focus only on automating parts of the customer
-            service stack. Aumne takes a different approach — we treat service
-            as a product experience and manage its entire lifecycle with AI.
+            service stack. Aumne takes a different approach-we treat service as
+            a product experience and manage its entire lifecycle with AI.
           </p>
 
           {/* <div className="text-center lg:text-start">
@@ -95,9 +95,9 @@ export default function SolutionBanner() {
         </div>
       </section>
       {/* SECTION 2 */}
-      <section className="bg-[#0A0A0A] px-10 relative z-30 ">
+      {/* <section className="bg-[#0A0A0A] px-10 relative z-30 ">
         <WhyAymne />
-      </section>
+      </section> */}
     </main>
   );
 }

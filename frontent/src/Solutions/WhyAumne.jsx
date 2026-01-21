@@ -67,17 +67,22 @@ export default function WhyAymne() {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-screen text-white py-40 overflow-visible"
+      className="relative min-h-screen text-white pb-40 overflow-visible"
     >
       <section className="w-full bg-transparent py-10">
         <div className="max-w-7xl mx-auto px-4">
           {/* Title */}
-          <h2 className="text-white text-3xl font-normal mb-8 ml-2">
+          <h2 className="text-white text-3xl font-normal mb-5 ml-2">
             Why Aumne
           </h2>
+          <p className="text-base text-center lg:text-start w-full ml-2 lg:w-[600px] mb-7 text-white/50 ">
+            Most platforms focus only on automating parts of the customer
+            service stack. Aumne takes a different approach-we treat service as
+            a product experience and manage its entire lifecycle with AI.
+          </p>
 
           {/* Main Grid Container with Top & Left Border */}
-          <div className="border-t border-l border-white/20">
+          <div className="border-t border-l border-white/20 ml-2">
             {services.map((service, index) => (
               <div
                 key={index}
@@ -99,7 +104,7 @@ export default function WhyAymne() {
                   <h3 className="text-white text-xl font-bold mb-4">
                     {service.title}
                   </h3>
-                  <p className="text-gray-400 text-base leading-relaxed max-w-2xl">
+                  <p className="text-white/50 text-base leading-relaxed max-w-2xl">
                     {service.description}
                   </p>
                 </div>

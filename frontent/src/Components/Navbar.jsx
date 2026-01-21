@@ -100,8 +100,8 @@ const Navbar = () => {
           <NavLink to="/solutions" className={activeStyle}>
             Solutions
           </NavLink>
-          <NavLink to="/vision" className={activeStyle}>
-            Vision
+          <NavLink to="/benefits" className={activeStyle}>
+            Benefits
           </NavLink>
           <NavLink to="/programs" className={activeStyle}>
             Programs
@@ -111,14 +111,14 @@ const Navbar = () => {
           </NavLink>
 
           {/* Login */}
-          <NavLink to="/login" className="flex items-center gap-2 group">
+          {/* <NavLink to="/login" className="flex items-center gap-2 group">
             <div className="w-8 h-8 bg-linear-to-r from-[#1E4EAD] via-[#1D82BD] to-[#1CC2D1] rounded-full flex items-center justify-center group-hover:scale-110 transition">
               <span className="text-[12px]">
                 <IoMdContact size={20} />
               </span>
             </div>
             <span className="text-[#0D7EB6]">Log In</span>
-          </NavLink>
+          </NavLink> */}
 
           {/* CTA */}
           <NavLink to="/get-started">

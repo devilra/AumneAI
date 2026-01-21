@@ -4,6 +4,8 @@ import HomePage from "./Home/HomePage";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import SolutionBanner from "./Solutions/SolutionBanner";
+import Solution from "./Solutions/Solution";
+import Benefits from "./Benefits/Benefits";
 
 const App = () => {
   return (
@@ -11,7 +13,8 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/solutions" element={<SolutionBanner />} />
+        <Route path="/solutions" element={<Solution />} />
+        <Route path="/benefits" element={<Benefits />} />
       </Routes>
       <Footer />
     </>
