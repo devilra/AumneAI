@@ -89,7 +89,7 @@ export default function HowActs() {
               style={{ backgroundImage: "url('/para2.avif')", left: "-20%" }}
             />
             <div className="relative z-10">
-              <h2 className="text-xl md:text-6xl text-center tracking-[6px] font-bold text-[#0D7EB6]">
+              <h2 className="text-xl md:text-6xl text-center tracking-[6px] font-bold text-white/70">
                 <span className="inline-block py-3">The</span> <br />
                 <span className="inline-block py-3">Act</span> <br />
                 <span className="inline-block py-3"> Lifecycle</span>{" "}
@@ -150,7 +150,7 @@ export default function HowActs() {
                     </h3>
 
                     {/* Description */}
-                    <p className="text-slate-400 text-sm leading-relaxed font-medium group-hover:text-slate-200 transition-colors duration-300">
+                    <p className="text-neutral-400 text-sm leading-relaxed font-medium group-hover:text-slate-200 transition-colors duration-300">
                       {card.desc}
                     </p>
                   </div>
