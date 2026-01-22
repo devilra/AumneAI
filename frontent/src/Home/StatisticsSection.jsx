@@ -177,13 +177,14 @@ export default function StatisticsSection() {
   return (
     <section
       ref={sectionRef}
-      className="pt-24 text-white px-6 bg-[#1c1c1c] overflow-hidden"
+      className="pt-10 text-white px-6 bg-gradient-to-r from-[#02060d] via-[#071827] via-[#0b2a3d] to-[#0e3b4e] overflow-hidden"
     >
+
       <div className="max-w-[1550px] mx-auto text-center">
         <h2 className="text-4xl md:text-6xl text-[#0D7EB6] font-semibold mb-6 tracking-tight">
           Industry Trends
         </h2>
-        <p className="mb-20 text-neutral-400 text-lg md:text-xl max-w-4xl mx-auto leading-relaxed">
+        <p className="mb-20 text-white text-lg md:text-xl max-w-4xl mx-auto leading-relaxed">
           The customer service landscape is rapidly evolving, but many
           organizations struggle with transformation challenges.
         </p>
@@ -222,7 +223,7 @@ export default function StatisticsSection() {
                 </span>
               </div>
 
-              <p className="text-neutral-400 text-lg mb-6 leading-relaxed">
+              <p className="text-white text-lg mb-6 leading-relaxed">
                 {item.label}
               </p>
               <p className="text-[#0D7EB6] text-sm font-medium tracking-wide uppercase">

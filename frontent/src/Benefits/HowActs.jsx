@@ -76,7 +76,7 @@ export default function HowActs() {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-screen text-white py-40 mb-20 overflow-visible"
+      className="relative min-h-screen text-white bg-gradient-to-r from-[#02060d] via-[#071827] via-[#0b2a3d] to-[#0e3b4e] py-40 mb-20 overflow-visible"
     >
       <div className="relative z-10 max-w-[1550px] mx-auto px-6 md:px-16">
         {/* Main Container with Border */}

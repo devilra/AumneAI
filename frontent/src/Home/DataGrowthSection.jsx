@@ -97,7 +97,7 @@ export default function DataGrowthSection() {
                   with enterprise-grade control.
                 </span>
               </h2>
-              <p className="mt-8 text-neutral-400 text-lg leading-relaxed max-w-xs">
+              <p className="mt-8 text-white/80 text-lg leading-relaxed max-w-xs">
                 Empower your enterprise with seamless AI integration and
                 data-driven decision making.
               </p>
@@ -125,7 +125,7 @@ export default function DataGrowthSection() {
                     <h3 className="text-lg font-semibold text-[#0D7EB6] mb-3 leading-tight">
                       {card.title}
                     </h3>
-                    <p className="text-neutral-400 text-sm leading-relaxed">
+                    <p className="text-white-80 text-sm leading-relaxed">
                       {card.desc}
                     </p>
                   </div>

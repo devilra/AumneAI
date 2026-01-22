@@ -79,7 +79,7 @@ export default function VelocityReliabilitySection() {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-screen bg-[#1c1c1c] text-white overflow-hidden py-20"
+      className="relative min-h-screen bg-gradient-to-r from-[#02060d] via-[#071827] via-[#0b2a3d] to-[#0e3b4e] text-white overflow-hidden py-20"
     >
       <div className="mx-auto max-w-[1550px] px-6 md:px-14">
         <div className="flex flex-col md:flex-row items-center gap-10 border border-white/10 rounded-xl overflow-hidden">

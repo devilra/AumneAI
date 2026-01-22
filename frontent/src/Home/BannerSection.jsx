@@ -83,7 +83,7 @@ export default function BannerSection() {
             The First Agentic Service <br />
             <span className="py-3 inline-block">Lifecycle Platform</span>
           </h1>
-          <p className="text-xl md:text-xl text-center lg:text-start w-full lg:w-[600px] text-white/50 ">
+          <p className="text-xl md:text-xl text-center lg:text-start w-full lg:w-[600px] text-white/80 ">
             Aumne revolutionizes Service Lifecycle Management with Agentic
             systems, transforming legacy IVRs, chatbots, fragmented workflows,
             and siloed support into Agentic conversational services.{" "}
