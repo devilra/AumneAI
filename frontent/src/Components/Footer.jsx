@@ -3,7 +3,7 @@ import { FaLinkedinIn, FaFacebookF, FaTwitter } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0A0A0A] text-white/70 py-20 px-6 md:px-16 border-t border-white/5">
+    <footer className="bg-[#0A0A0A] text-white/70 py-20 px-6 md:px-16 border-t border-white/5 ">
       <div className="max-w-[1300px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
         {/* LOGO & ADDRESS BLOCK */}
         <div className="space-y-8">
